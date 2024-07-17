@@ -128,7 +128,7 @@ const ReservationSidebar: React.FC<ReservationSidebarProps> = ({
     return (
         <aside className="p-4 rounded-xl border border-saffron shadow-xl bg-white w-[360px]">
             <div className="">
-            <h2 className="mb-5 text-2xl text-black font-semibold">${property.price_per_night} per night</h2>
+            <h2 className="mb-5 text-2xl text-black font-semibold">{property.price_per_night} MAD per night</h2>
 
             <DatePicker
                 value={dateRange}

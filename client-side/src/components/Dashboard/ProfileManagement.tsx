@@ -6,6 +6,7 @@ import apiService from "../../services/apiService";
 // import LoginBtnOptions from "../../Shared/LoginBtnOptions";
 import { resetAuthCookies } from "../../lib/actions";
 import { Link } from "react-router-dom";
+import noUserAvatar from "../../assets/noUserAvatar.png";
 
 const ProfileManagement = () => {
   const [landlord, setLandlord] = useState<any>(null);
@@ -90,7 +91,7 @@ const ProfileManagement = () => {
       <div className="basis-[45%] min-w-[300px]">
         <div className="flex gap-4 items-center flex-col text-black">
         <div className="bg-white p-4 rounded-full shadow-lg w-[200px] h-[200px]">
-            <img src={avatar_url} alt="user picture" className="w-full h-full object-cover rounded-full" />
+            <img src={avatar_url || noUserAvatar} alt="Profile picture" className="w-full h-full object-cover rounded-full" />
         </div>
 
           <h2>{name}</h2>

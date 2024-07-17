@@ -3,7 +3,7 @@ import filterIcom from "../assets/filter-icon.png";
 import useMediaQuery from "../hooks/useMediaQuery";
 import useSearchModal from "../hooks/useSearchModal";
 
-const CITIES: string[] = ["Safi", "Rabat", "Tangie", "Agadir", "Marrakech", "Casablanca"];
+const CITIES: string[] = ["Safi", "Rabat", "Tangier", "Agadir", "Marrakech", "Casablanca"];
 const GUESTS: number[] = [1, 2, 3, 4, 5];
 const PRICES: number[] = [50, 100, 150, 200, 300, 1000, 1590];
 

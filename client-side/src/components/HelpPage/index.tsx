@@ -11,20 +11,24 @@ function HelpPage() {
 
   const data = [
     {
-      question: "What is React",
-      answer: "React is a JavaScript library for building user interfaces.",
+      question: "How do I book a home",
+      answer: "Open a listing, choose your dates on the calendar and the number of guests, then click Book. You need to be signed in.",
     },
     {
-      question: "How do I install React",
-      answer: "You can install React using npm or yarn.",
+      question: "How is the total price calculated",
+      answer: "Prices are per night, in Moroccan dirhams (MAD). The total adds a 5% TIGMINO fee, and you see it before you book.",
     },
     {
-      question: "How do I install React",
-      answer: "You can install React using npm or yarn.",
+      question: "How do I contact a host",
+      answer: "Click Contact Host on the listing. It opens a real-time chat, and your conversations stay in your Inbox.",
     },
     {
-      question: "How do I install React",
-      answer: "You can install React using npm or yarn.",
+      question: "How do I become a host",
+      answer: "Sign in, then use the Add property icon in the header or the Listings tab of your dashboard to publish your home.",
+    },
+    {
+      question: "Where can I see my bookings",
+      answer: "Under My Reservations in the profile menu, and in the Bookings tab of your dashboard.",
     },
   ];
 

@@ -28,8 +28,8 @@ function UserProfileIcon({ isProfileClicked,
         className="flex justify-center bg-beige-primary-bg w-[35px] h-[35px] rounded-full overflow-hidden cursor-pointer shadow-lg"
       >
         <img 
-          src={userId ? userProfileIcon : noUserAvatar} 
-          alt={noUserAvatar} 
+          src={userId && userProfileIcon ? userProfileIcon : noUserAvatar} 
+          alt="Profile" 
         />
       </div>
 

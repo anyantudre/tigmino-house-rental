@@ -68,7 +68,7 @@ def properties_list(request):
         properties = properties.filter(city=city)
 
     if area:
-        properties = properties.filter(country=area)
+        properties = properties.filter(area__gte=area)
     
     if category and category != 'undefined':
         properties = properties.filter(category=category)

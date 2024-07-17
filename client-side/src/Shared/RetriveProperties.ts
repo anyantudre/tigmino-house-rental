@@ -61,7 +61,7 @@ export async function retrieveProperties({
     let urlQuery = "";
 
     if (city) {
-      urlQuery += "&country=" + city;
+      urlQuery += "&city=" + city;
     }
 
     if (area) {
@@ -85,10 +85,10 @@ export async function retrieveProperties({
     }
 
     if (checkinDate) {
-      urlQuery += "&checkin=" + format(checkinDate, "yyyy-MM-dd");
+      urlQuery += "&checkIn=" + format(checkinDate, "yyyy-MM-dd");
     }
     if (checkoutDate) {
-      urlQuery += "&checkout=" + format(checkoutDate, "yyyy-MM-dd");
+      urlQuery += "&checkOut=" + format(checkoutDate, "yyyy-MM-dd");
     }
 
     if (urlQuery.length) {

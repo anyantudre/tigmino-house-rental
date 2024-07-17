@@ -56,7 +56,7 @@ function AllProperties() {
           <H1Title styling="text-white sm:text-[40px]">
             <p>All Properties</p>
           </H1Title>
-          <small className="text-white">124 results</small>
+          <small className="text-white">{properties.length} {properties.length === 1 ? "result" : "results"}</small>
         </motion.div>
         <motion.div
           className="flex justify-center py-8"

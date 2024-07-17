@@ -14,6 +14,7 @@ interface ConversationDetailProps {
 interface WebSocketMessage {
     name: string;
     body: string;
+    sender_id?: string;
 }
 
 const ConversationDetail: React.FC<ConversationDetailProps> = ({
@@ -35,12 +36,13 @@ const ConversationDetail: React.FC<ConversationDetailProps> = ({
 
     useEffect(() => {
         if (lastJsonMessage) {
+            const fromMe = lastJsonMessage.sender_id ? lastJsonMessage.sender_id === userId : true;
             const message: MessageType = {
                 id: '',
                 name: lastJsonMessage.name,
                 body: lastJsonMessage.body,
-                sent_to: otherUser!,
-                created_by: myUser!,
+                sent_to: fromMe ? otherUser! : myUser!,
+                created_by: fromMe ? myUser! : otherUser!,
                 conversationId: conversation.id
             };
             setRealtimeMessages((prevMessages) => [...prevMessages, message]);

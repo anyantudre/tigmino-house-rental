@@ -74,7 +74,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 REST_AUTH = {
     "USE_JWT": True,
-    "JWT_AUTH_HTTPONLY": False
+    "JWT_AUTH_HTTPONLY": False,
+    "REGISTER_SERIALIZER": "useraccount.serializers.TigminoRegisterSerializer",
 }
 
 
@@ -151,13 +152,16 @@ WSGI_APPLICATION = 'tigmino.wsgi.application'
 ASGI_APPLICATION = 'tigmino.asgi.application'
 
 
-# email settings
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+# email settings: set EMAIL_HOST_USER and EMAIL_HOST_PASSWORD to send real emails;
+# otherwise emails are printed to the console.
+EMAIL_HOST = os.environ.get('EMAIL_HOST', 'smtp.gmail.com')
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "nyantudrealban@gmail.com"
-EMAIL_HOST_PASSWORD = "ivsv fpka ypvz slss"
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', '')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
+EMAIL_BACKEND = ('django.core.mail.backends.smtp.EmailBackend' if EMAIL_HOST_PASSWORD
+                 else 'django.core.mail.backends.console.EmailBackend')
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER or 'support@tigmino.com'
 
 
 

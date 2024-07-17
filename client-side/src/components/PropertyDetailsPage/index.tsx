@@ -45,6 +45,10 @@ const PropertyDetailsPage = () => {
     return <LoadingSpinner />;
   }
 
+  // Extra photos, without repeating the main one (the backend copies it when a slot is empty)
+  const gallery = [property.image1_url, property.image2_url, property.image3_url, property.image4_url]
+    .filter((url: string, i: number, all: string[]) => url && url !== property.image_url && all.indexOf(url) === i);
+
   return (
     <section className="bg-beige-primary-bg min-h-screen">
       <Header />
@@ -57,10 +61,18 @@ const PropertyDetailsPage = () => {
             {/* Images Section */}
             <div className="col-span-2 flex flex-col gap-4">
               <div className="">
-                <img className="h-[400px] w-full rounded-md" src={property.image_url} alt="Main" />
+                <img className="h-[400px] w-full rounded-md object-cover" src={property.image_url} alt={property.title} />
                 <div className="absolute top-20 left-20">
                 </div>
               </div>
+
+              {gallery.length > 0 && (
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  {gallery.map((url: string) => (
+                    <img key={url} className="h-[140px] w-full rounded-md object-cover" src={url} alt={property.title} />
+                  ))}
+                </div>
+              )}
               
               <div className="flex gap-4 items-center">
                 <H1Title styling="text-black mb-4">

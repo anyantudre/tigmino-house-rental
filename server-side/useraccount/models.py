@@ -72,7 +72,7 @@ class Contact(models.Model):
         send_mail(
             "Contact Query",
             "Here is the message.",
-            "nyantudrealban@gmail.com",
+            settings.DEFAULT_FROM_EMAIL,
             [self.email],
             fail_silently=False,
             html_message=f'''<html lang="en">
