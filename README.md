@@ -110,6 +110,22 @@ The other hosts and guests (`karim`, `salma`, `youssef`, `omar`, `hassan`, `amin
 
 The project was first developed in [belharche/TigminoProject](https://github.com/belharche/TigminoProject).
 
+## Citation
+
+If you use, adapt or build on TIGMINO, please cite it and link to this repository as the source. GitHub's "Cite this repository" button (from [CITATION.cff](CITATION.cff)) gives the same reference in APA and BibTeX.
+
+```bibtex
+@software{nyantudre2024tigmino,
+  author = {NYANTUDRE, Wendyellé Abubakrh Alban and EL HARCHE, Brahim and GOITA, Oumar},
+  title  = {{TIGMINO}: A House-Rental Platform for Morocco with a Chatbot and Real-Time Messaging},
+  year   = {2024},
+  url    = {https://github.com/anyantudre/TIGMINO-AI-Powered-House-Rental-Platform},
+  note   = {Academic mini-project, ENSA Safi, Université Cadi Ayyad}
+}
+```
+
+Corresponding author: Wendyellé Abubakrh Alban NYANTUDRE (nyantudrealban@gmail.com).
+
 ## License
 
 TIGMINO is released under the [PolyForm Noncommercial License 1.0.0](LICENSE.md). You can use, change and share the code for any noncommercial purpose, such as learning, teaching, research or personal projects. Commercial use needs permission from the authors. The demo photos and avatars keep their own licenses, listed in [docs/CREDITS.md](docs/CREDITS.md).
