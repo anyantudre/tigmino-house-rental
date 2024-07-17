@@ -19,8 +19,8 @@ contact:
   - given-names: Wendyellé Abubakrh Alban
     family-names: NYANTUDRE
     email: nyantudrealban@gmail.com
-repository-code: "https://github.com/anyantudre/TIGMINO-AI-Powered-House-Rental-Platform"
-url: "https://github.com/anyantudre/TIGMINO-AI-Powered-House-Rental-Platform"
+repository-code: "https://github.com/anyantudre/tigmino-house-rental"
+url: "https://github.com/anyantudre/tigmino-house-rental"
 abstract: >-
   TIGMINO is a house-rental platform for Morocco, built with students in mind.
   Guests browse listings, book a stay, ask a chatbot (a TensorFlow/Keras intent

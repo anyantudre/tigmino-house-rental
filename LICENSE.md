@@ -1,4 +1,4 @@
-Required Notice: Copyright 2024 Brahim EL HARCHE, Oumar GOITA and Wendyellé A. Alban NYANTUDRE (https://github.com/anyantudre/TIGMINO-AI-Powered-House-Rental-Platform)
+Required Notice: Copyright 2024 Brahim EL HARCHE, Oumar GOITA and Wendyellé A. Alban NYANTUDRE (https://github.com/anyantudre/tigmino-house-rental)
 
 # PolyForm Noncommercial License 1.0.0
 

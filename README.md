@@ -119,7 +119,7 @@ If you use, adapt or build on TIGMINO, please cite it and link to this repositor
   author = {NYANTUDRE, Wendyellé Abubakrh Alban and EL HARCHE, Brahim and GOITA, Oumar},
   title  = {{TIGMINO}: A House-Rental Platform for Morocco with a Chatbot and Real-Time Messaging},
   year   = {2024},
-  url    = {https://github.com/anyantudre/TIGMINO-AI-Powered-House-Rental-Platform},
+  url    = {https://github.com/anyantudre/tigmino-house-rental},
   note   = {Academic mini-project, ENSA Safi, Université Cadi Ayyad}
 }
 ```
